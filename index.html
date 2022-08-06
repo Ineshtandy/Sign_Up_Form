@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- bootstrap files -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+
+    <!-- IMAGE -->
+
+    <div class="image-area">
         <img src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="leaf image">
-        <p>This is not a real online service! You know you need something like this in your life to help 
-            you realize your deepest dreams. <br>Sign up now to get started.
-        </p>
-        <p>You know you want to.</p>
     </div>
-    <div class="input">
+    
+    <!-- HEADER -->
+
+    <div class="header row">
+        <p>This is not a real online service! You know you need something like this in your life to help 
+            you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+    </div>
+
+    <!-- INPUT -->
+
+    <div class="input row">
         <h1>Let's do this!</h1>
-        <div>
-            <label for="first-name">FIRST NAME</label>
+        <div class="input-box" >
+            <label for="first-name">FIRST NAME</label> <br>
             <input type="text" id="first-name" name="first-name" placeholder="Inesh">
         </div>
-        <div>
-            <label for="last-name">LAST NAME</label>
+        <div class="input-box">
+            <label for="last-name">LAST NAME</label> <br>
             <input type="text" id="last-name" name="last-name" placeholder="Tandon">
         </div>
-        <div>
-            <label for="email-entry">EMAIL</label>
+        <div class="input-box">
+            <label for="email-entry">EMAIL</label> <br>
             <input type="email" id="email-entry" name="email-entry" placeholder="123abc@thebest.com">
         </div>
-        <div>
-            <label for="phone-number-entry">PHONE NUMBER</label>
+        <div class="input-box">
+            <label for="phone-number-entry">PHONE NUMBER</label> <br>
             <input type="number" id="phone-number-entry" name="phone-number-entry" placeholder="Inesh" min="10">
         </div>
-        <div>
-            <label for="password-entry">PASSWORD</label>
+        <div class="input-box error">
+            <label for="password-entry">PASSWORD</label> <br>
             <input type="password" id="password-entry" name="password-entry" placeholder="@123eEup">
         </div>
-        <div>
-            <label for="password-confirmation">CONFIRM PASSWORD</label>
+        <div class="input-box error">
+            <label for="password-confirmation">CONFIRM PASSWORD</label> <br>
             <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Inesh">
         </div>
     </div>
-    <div class="footer">
-        <button>Create Account</button>
+
+    <!-- FOOTER -->
+
+    <div class="footer ">
+        <button type="button" class="btn btn-success">Create Account</button>
         <div>Already have an account? <a href="#">Log in</a></div>
     </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
