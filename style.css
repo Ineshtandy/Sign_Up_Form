@@ -1,46 +1,80 @@
 body{
     /* display: flex; */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-img{
-    width: 40%;
+.left{
+    padding: 0;
+}
+.right{
+    padding: 0;
 }
 
-.header{
+img{
+    /* to fill up the image in a div */
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#header{
     background-color: rgba(21, 163, 163, 0.548);
     padding: 4% 3%;
     font-weight: 700;
 }
 
-.input{
+/* input section */
+
+h1{
+    margin: 0 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#input{
     padding: 4% 3%;
     gap: 10px;
     box-shadow: 0px 2px #888;
 }
 
 .input-box{
-    width: 35%;
     margin: 2% 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: green;
 }
 
-.footer{
-    margin: 5% 3%;
+/* this section is how divs are side by side */
+.input{
+    width: 100%;
+}
+.input-box{
+    display: inline-block;
+    width: 250px;
 }
 
-button{
-    margin-bottom: 2%;
-}
 
-/* input */
+/* input  tag*/
 
 input{
     border-color: #E5E7EB;
     border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
 }
 
-input:focus{
-    border-color: lightblue;
+input:focus {
+    border-color: rgb(9, 65, 150);
     box-shadow: 2px 2px lightblue;
+}
+
+/* footer */
+
+#footer{
+    margin: 6% 2%;
+}
+
+button{
+    margin-bottom: 2%;
 }
