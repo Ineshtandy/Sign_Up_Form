@@ -7,6 +7,11 @@
     <!-- css file -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,56 +19,61 @@
 </head>
 <body>
 
-    <!-- IMAGE -->
+    <div class="row">
+        <!-- IMAGE -->
 
-    <div class="image-area">
-        <img src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="leaf image">
-    </div>
+        <div class="left col-5">
+            <img src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="leaf image">
+        </div>
     
-    <!-- HEADER -->
+        <div class="right col-7">
+                <!-- HEADER -->
 
-    <div class="header row">
-        <p>This is not a real online service! You know you need something like this in your life to help 
-            you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
-    </div>
+                <div id="header">
+                    <p>This is not a real online service! You know you need something like this in your life to help 
+                        you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+                    </p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
 
-    <!-- INPUT -->
+                <!-- INPUT -->
 
-    <div class="input row">
-        <h1>Let's do this!</h1>
-        <div class="input-box" >
-            <label for="first-name">FIRST NAME</label> <br>
-            <input type="text" id="first-name" name="first-name" placeholder="Inesh">
-        </div>
-        <div class="input-box">
-            <label for="last-name">LAST NAME</label> <br>
-            <input type="text" id="last-name" name="last-name" placeholder="Tandon">
-        </div>
-        <div class="input-box">
-            <label for="email-entry">EMAIL</label> <br>
-            <input type="email" id="email-entry" name="email-entry" placeholder="123abc@thebest.com">
-        </div>
-        <div class="input-box">
-            <label for="phone-number-entry">PHONE NUMBER</label> <br>
-            <input type="number" id="phone-number-entry" name="phone-number-entry" placeholder="Inesh" min="10">
-        </div>
-        <div class="input-box error">
-            <label for="password-entry">PASSWORD</label> <br>
-            <input type="password" id="password-entry" name="password-entry" placeholder="@123eEup">
-        </div>
-        <div class="input-box error">
-            <label for="password-confirmation">CONFIRM PASSWORD</label> <br>
-            <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Inesh">
-        </div>
-    </div>
+                <div class="input">
+                    <h1>Let's do this!</h1>
+                    <div class="input-box" >
+                        <label for="first-name">FIRST NAME</label> <br>
+                        <input type="text" id="first-name" name="first-name" placeholder="Inesh">
+                    </div>
+                    <div class="input-box">
+                        <label for="last-name">LAST NAME</label> <br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Tandon">
+                    </div>
+                    <div class="input-box">
+                        <label for="email-entry">EMAIL</label> <br>
+                        <input type="email" id="email-entry" name="email-entry" placeholder="123abc@thebest.com">
+                    </div>
+                    <div class="input-box">
+                        <label for="phone-number-entry">PHONE NUMBER</label> <br>
+                        <input type="number" id="phone-number-entry" name="phone-number-entry" placeholder="Inesh" min="10">
+                    </div>
+                    <div class="input-box error">
+                        <label for="password-entry">PASSWORD</label> <br>
+                        <input type="password" id="password-entry" name="password-entry" placeholder="@123eEup">
+                    </div>
+                    <div class="input-box error">
+                        <label for="password-confirmation">CONFIRM PASSWORD</label> <br>
+                        <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Inesh">
+                    </div>
+                </div>
 
-    <!-- FOOTER -->
+                <!-- FOOTER -->
 
-    <div class="footer ">
-        <button type="button" class="btn btn-success">Create Account</button>
-        <div>Already have an account? <a href="#">Log in</a></div>
+                <div id="footer">
+                    <button type="button" class="btn btn-success">Create Account</button>
+                    <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+
+        </div>
     </div>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
